@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #1d1d1d;
+}
+
+li {
+  list-style-image: url("images/icon-plus.png");
+  line-height: 1.6em;
+}
+
+img {
+  border-radius: 15px;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+th,
+td {
+  padding: 5px 30px 5px 10px;
+  border-spacing: 0px;
+  font-size: 90%;
+  margin: 0px;
+}
+
+th,
+td {
+  text-align: left;
+  background-color: #202020;
+}
+
+tr.head th {
+  color: #fff;
+  background-color: #292929;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+
+td {
+  text-shadow: 1px 1px 1px #ffffff;
+}
+
+tr.even td,
+tr.even th {
+  background-color: #000000;
+}
+
+tr.head th:first-child {
+  /* WebKit is a browser engine used in Apple's Safari browser, Amazon 
+            Kindle e-book reader, BlackBerry Browser in OS 6 and above.
+
+            Not all CSS3 properties work well in all browsers. In a way to ensure that web pages display as expected in their browsers, vendors like Mozilla and Webkit developed their own browser-compatible properties. With CSS3, many compatibility issues are now resolved.
+            However, it is not unusual to still see these properties used in stylesheets. */
+
+  /* Webkit property*/
+  -webkit-border-top-left-radius: 5px;
+
+  /* Mozilla property*/
+  -moz-border-radius-topleft: 5px;
+
+  /* CSS3 property*/
+  border-top-left-radius: 5px;
+
+  /* More on border-radius property: https://www.the-art-of-web.com/css/border-radius/ */
+}
+
+tr.head th:last-child {
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+}
+
+form {
+  width: 310px;
+  margin-top: 20px;
+  border: 1px solid #d6d6d6;
+  background-color: #e7e7e7;
+  line-height: 1.6em;
+  color: rgb(0, 0, 0);
+}
+
+legend {
+  font-style: italic;
+  color: #666666;
+}
+
+input[type="text"] {
+  width: 120px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+  background-color: #d0e2f0;
+  border: 1px solid #999999;
+}
+
+input[type="submit"] {
+  border: 1px solid #006633;
+  background-color: #009966;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid #006633;
+  background-color: #00cc33;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.title {
+  float: left;
+  width: 160px;
+  clear: left;
+}
+
+.submit {
+  width: 310px;
+  text-align: right;
+}
+
+#page {
+  max-width: 1024px;
+  min-width: 720px;
+  margin: 10px auto 10px auto;
+
+  border: 4px #000;
+  vertical-align: baseline;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.lead {
+  font-weight: 400;
+  font-size: 150%;
+  color: rgb(212, 212, 212);
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 100%;
+  color: rgb(212, 212, 212);
+}
+
+#hero h1 {
+  font-weight: 700;
+  font-size: 300%;
+  margin: 0;
+  padding: 0;
+}
+
+#hero .col-1 {
+  width: 60%;
+}
+#hero .col-2 {
+  width: 40%;
+  text-align: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.center-mid-1 {
+  width: 940px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.center-mid-2 {
+  width: 940px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.center-mid-3 {
+  width: 940px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.center-2 {
+  width: 940px;
+  margin: auto;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.center-3 {
+  width: 300px;
+  margin: 0 0;
+}
+
+.img-1 {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.img-2 {
+  margin: auto;
+  width: 30%;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.gallery-image {
+  width: 30%;
+  height: 250px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.img-lp {
+  padding-left: 8px;
+}
+
+.footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.footer p {
+  color: rgb(0, 0, 0);
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-2 > h1,
+.center-2 > p {
+  text-align: center;
+}
+
+h1.center-text {
+  font-family: "Open Sans", serif;
+  font-size: 550%;
+}
+
+.menu-holder {
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  transition: right 0.3s ease;
+  z-index: 99;
+}
+
+#header-main-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-menu-name {
+  font-weight: 700;
+  font-size: 200%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  padding: 10px;
+}
+
+ul li a,
+ul a :hover,
+ul li a:focus,
+ul li a:active {
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
